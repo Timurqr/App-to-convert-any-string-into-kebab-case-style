@@ -6,7 +6,7 @@ namespace ConvertAnyStringIntoKebabCaseStyle
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.Write("Enter text to convert to kebab-case-style");
         }
     }
 }
