@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Text.RegularExpressions;
-using System.Text;
 
 namespace ConvertAnyStringIntoKebabCaseStyle
 {
@@ -10,10 +9,10 @@ namespace ConvertAnyStringIntoKebabCaseStyle
         {
             Console.Write("Enter text convert to kebab-case-style: ");
             var inputText = (Console.ReadLine());
-            string pattern = @"\W";
-            string target = "-";
+            string pattern = @"[\W_]+";
+            string replacement = "-";
             Regex regex = new Regex(pattern);
-            string result = regex.Replace(inputText, target);            
+            string result = regex.Replace(inputText, replacement);            
             Console.WriteLine(result.ToLower());
         }
     }
